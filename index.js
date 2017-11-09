@@ -68,12 +68,10 @@ function isNull(item)
 
 /**
 * @param {array} dataset: an array of points, each point is shaped as [lat lon];
- * @param {integer} minPts: the minimal number of points in a cluster
- * @param {string} eps_unit: in either "km" or "mi"
- * @callback {function} callback: (error, clusters):
-                       error is a string describing the error,
-                       clusters is an array of clusters; each cluster is another array of points with index coorresponding to the index in the input dataset
- */
+* @param {integer} eps: the radius of the cluster
+* @param {string} eps_unit: in either "km" or "mi"
+* @param {integer} minPts: the minimal number of points in a cluster
+*/
 module.exports=function(dataset, eps, eps_unit="km", minPts)
 {
     var external={};
@@ -167,6 +165,11 @@ module.exports=function(dataset, eps, eps_unit="km", minPts)
 
     }
 
+    /**
+    * @callback {function} callback: (error, clusters):
+                          error is a string describing the error,
+                          clusters is an array of clusters; each cluster is another array of points with index coorresponding to the index in the input dataset
+    */
     external.fit=function(callback)
     {
 
