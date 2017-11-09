@@ -1,0 +1,24 @@
+{
+  "name": "dbscan_gps",
+  "version": "1.0.0",
+  "description": "A node.js module for clustering GPS coordinates by using DBSCAN algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ichenjia/dbscan_gps.git"
+  },
+  "keywords": [
+    "DBSCAN",
+    "clustering",
+    "GPS"
+  ],
+  "author": "Jia Chen <jia@talentful.ai>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ichenjia/dbscan_gps/issues"
+  },
+  "homepage": "https://github.com/ichenjia/dbscan_gps#readme"
+}
