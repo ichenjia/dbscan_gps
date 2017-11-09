@@ -1,6 +1,6 @@
 {
   "name": "dbscan_gps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node.js module for clustering GPS coordinates by using DBSCAN algorithms",
   "main": "index.js",
   "scripts": {
